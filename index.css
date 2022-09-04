@@ -1,0 +1,118 @@
+div {
+  margin: auto;
+}
+div.wheel {
+  border: 25px solid #3872c9;
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 5px #def00e, 0px 0px 0px 5px #def00e inset;
+  height: 490px;
+  width: 490px;
+  position: relative;
+  animation: run 20s linear 0s infinite;
+}
+.frame {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+}
+.frame .stick1,
+.stick2,
+.stick3,
+.stick4 {
+  background-color: #def00e;
+  height: 5px;
+  width: 480px;
+  position: absolute;
+  bottom: 203px;
+  left: 5px;
+  z-index: 1;
+}
+.stick2 {
+  transform: rotate(45deg);
+}
+.stick3 {
+  transform: rotate(-45deg);
+}
+.stick4 {
+  transform: rotate(90deg);
+}
+.carriages {
+  position: absolute;
+}
+.trestle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100px 400px 100px;
+  border-color: transparent transparent #3872c9 transparent;
+
+  align-items: center;
+  bottom: -2px;
+  z-index: -2;
+  margin-top: -285px;
+}
+.center {
+  position: absolute;
+  background-color: #3872c9;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  transform: translate(-50%, -50%);
+}
+.roof {
+  height: 20px;
+  width: 70px;
+  border-radius: 10px;
+  background-color: #b4d13f;
+  position: absolute;
+  z-index: 5;
+  left: 40px;
+  top: -2px;
+}
+.house {
+  width: 50px;
+  height: 80px;
+  position: absolute;
+  left: 50px;
+  background-color: #ad2828;
+  z-index: 4;
+  border-radius: 10px;
+}
+.car2 {
+  position: absolute;
+  left: 368px;
+  top: 33px;
+}
+.car3 {
+  position: absolute;
+  left: -108px;
+  top: 231px;
+}
+.car4 {
+  position: absolute;
+  left: 453px;
+  top: 239px;
+}
+.car5 {
+  position: absolute;
+  left: 12px;
+  top: 446px;
+}
+.car6 {
+  position: absolute;
+  left: 359px;
+  top: 431px;
+}
+
+@keyframes run {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
